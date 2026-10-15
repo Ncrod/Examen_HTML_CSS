@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matricula</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <section id="matricula">
         <h1>Solicitud de Matrícula</h1>
-        <p class="subtitulo">Completa los datos y te contactaremos</p>
+        <p class="subtitulo">Completa los datos y te contactaremos para iniciar el curso</p>
 
         <form id="contacto">
             <div class="campo">
@@ -23,7 +23,7 @@
             </div>
             <div class="campo">
                 <label for="telefono">Numero de teléfono</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" pattern="[0-9]{7,10}" requiered>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3001234567" pattern="[0-9]{7,10}" required>
             </div>
 
             <div class="campo">
@@ -35,6 +35,13 @@
                     <option value="mixto">Mixto</option>
                 </select>
             </div>
+
+            <div class="campo campo-completo">
+                <label for="mensaje">Mensaje - Comentario</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="boton-enviar">Enviar solicitud</button>
         </form>
     </section>
     
