@@ -36,7 +36,7 @@ body{
 
 #matricula h1{
     text-align: center;
-    color: #1a1978;
+    color: #283593;
     margin-bottom: 8px;
     font-size: 28px;
 }
@@ -87,3 +87,45 @@ input:focus, select:focus, textarea:focus{
     outline: none;
 }
 
+textarea{
+    resize: vertical;
+}
+
+.boton-enviar{
+    flex: 1 1 100%;
+    padding: 14px;
+    background-color: #283593;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.boton-enviar:hover{
+    background-color: #1a237e;
+    box-shadow: 0 4px 12px rgba(22, 21, 71, 0.3);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px){
+    #matricula{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    #matricula{
+        padding: 20px;
+    }
+
+    .campo{
+        flex: 1 1 100%;
+    }
+
+    #matricula h1{
+        font-size: 22px;
+    }
+}
