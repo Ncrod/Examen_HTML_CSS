@@ -121,6 +121,10 @@ textarea{
         padding: 20px;
     }
 
+    input, select, textarea{
+        width: 100%;
+    }
+
     .campo{
         flex: 1 1 100%;
     }
