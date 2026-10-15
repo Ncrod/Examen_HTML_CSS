@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="matricula">
+        <h1>Solicitud de Matrícula</h1>
+        <p class="subtitulo">Completa los datos y te contactaremos</p>
+
+        <form id="contacto">
+            <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo">
+            </div>
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required placeholder="Ingresa tu correo electrónico">
+            </div>
+            <div class="campo">
+                <label for="telefono">Numero de teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" pattern="[0-9]{7,10}" requiered>
+            </div>
+
+            <div class="campo">
+                <label for="curso">Tipo de curso</label>
+                <select id="curso" name="curso" required>
+                    <option value="">Selecciona un curso</option>
+                    <option value="carr">Carro</option>
+                    <option value="moto">Moto</option>
+                    <option value="mixto">Mixto</option>
+                </select>
+            </div>
+        </form>
+    </section>
+    
+</body>
+</html>
